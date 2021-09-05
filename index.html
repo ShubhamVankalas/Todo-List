@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href=".//asset/style/style.css">
+    <script src="https://kit.fontawesome.com/b862bb0d81.js" crossorigin="anonymous"></script>
+</head>
+<body id="body" >
+    <header id="darkmodetoggle" class="day-bg" ></header>
+    <section class="main-container">
+        <div class="container">
+            <h2>
+                ToDo List 
+                <input type="checkbox" id="switch" onclick="toggle()"/> 
+                <label id="switch-label" class="switch-label" for="switch"> Toggle </label>
+            </h2>
+            <div class="list">
+                <div class="list-item">
+                    <input type="text" placeholder="Add a task to the list...">
+                    <i class="fas fa-plus"></i>
+                </div>
+                <ol class="todo-list">
+                <div id="taskbar-items" class="taskbar list-item">
+                    <div id="item-no"> 3 items </div>
+                    <div class="active">
+                        <div id="all"> All </div>
+                        <div id="pending"> Pending </div>
+                        <div id="complete"> Completed </div>
+                    </div>
+                    <div class="clear"> Clear </div>
+                    
+                </ol>
+                <div id="tasks" class="tasks">
+                    <div id="item1" class="item1"> <input type="radio" id="radio1"> <label for="radio1" class="radio1-label" > Complete the pending project </label> </div>
+                    <div id="item2" class="item2"> <input type="radio" id="radio2"> <label for="radio2" class="radio2-label"> Learn Javascript </label> </div>
+                    <div id="item3" class="item3"> <input type="radio" id="radio3"> <label for="radio3" class="radio3-label"> Create a Landing Page </label> </div>
+
+                </div>
+                </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="copyright">
+            <a href="https://github.com/ShubhamVankalas" target="_blank">Shubham Vankalas</a>
+        </div>
+        <div class="socials">
+            <a href="https://github.com/ShubhamVankalas" target="_blank"><i class="fa fa-github fa-lg"></i></a>
+            <a href="https://www.linkedin.com/in/shubham-vankalas/" target="_blank"><i class="fa fa-linkedin fa-lg"> </i></a>
+        </div>
+    </footer>
+    <script src="./asset/js/toggle.js"></script>
+</body>
+</html>

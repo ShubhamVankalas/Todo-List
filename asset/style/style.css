@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Sora&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100%;
+}
+
+.day-bg {
+  min-height: 400px;
+  background: url("https://initiate.alphacoders.com/images/679/cropped-2560-781-679478.jpg?2578");
+  background-size: cover;
+  background-position: center;
+}
+
+.night-bg {
+  min-height: 400px;
+  background: url("https://initiate.alphacoders.com/images/784/cropped-2560-781-784001.jpg?8363");
+  background-size: cover;
+  background-position: center;
+}
+
+.main-container {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-container .container {
+  width: 450px;
+  min-height: 400px;
+  position: absolute;
+  top: -250px;
+}
+
+/*        HEADING       */
+
+.main-container .container h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 3rem;
+  color: rgb(240, 240, 240);
+  font-weight: 600;
+  text-shadow: #111 3px 3.5px;
+  margin: 0 0 17px 0;
+}
+
+/*        TASK ADDING BAR          */
+
+.list-item input {
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0);
+  outline: none;
+  border: none;
+  font-weight: 500;
+  font-size: 19px;
+  padding: 0 0 0 10px;
+}
+
+.list-item {
+  background-color: rgba(255, 255, 255, 0.664);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 10px;
+  border-radius: 4px;
+  height: 40px;
+  opacity: 1;
+}
+
+/*      TODO lIST  NAVBAR        */
+
+.todo-list {
+  margin-top: 10px;
+  padding: 5px;
+  max-height: 500px;
+  border-radius: px;
+}
+
+.taskbar {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+.active {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#all {
+  margin: 0px 10px;
+}
+
+#pending {
+  margin: 0px 10px;
+}
+
+#complete {
+  margin: 0px 10px;
+}
+
+/*        WORK LIST       */
+
+.tasks {
+  display: flex;
+  background-color: rgb(246, 246, 246);
+  border-radius: 10px;
+  max-height: 500px;
+  flex-direction: column;
+  margin: 6px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.item1 {
+  background-color: rgb(231, 231, 231);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.item2 {
+  background-color: rgb(231, 231, 231);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.item3 {
+  background-color: rgb(231, 231, 231);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/*        FOOTER        */
+
+footer {
+  background-color: rgb(200, 200, 200);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 17px;
+}
+
+.copyright {
+  padding-top: 5px;
+  cursor: pointer;
+  font-family: "Sora", sans-serif;
+  font-size: 22px;
+}
+
+.copyright a {
+  color: rgb(0, 0, 0);
+}
+
+/*        FONT AWESOME ICONS        */
+
+i.fas.fa-plus {
+  padding-right: 8px;
+  color: rgb(61, 61, 61);
+}
+
+i.fa.fa-github {
+  margin: 10px 10px;
+  color: black;
+}
+
+i.fa.fa-linkedin {
+  margin: 10px 10px;
+  color: #2867b2;
+}
+
+/*        TOOGLE SWITCH       */
+
+#switch {
+  display: none;
+}
+
+label.switch-label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 70px;
+  height: 35px;
+  background: rgb(255, 255, 255);
+  display: block;
+  border-radius: 50px;
+  position: relative;
+}
+
+label.switch-label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 25px;
+  height: 25px;
+  background: rgb(255, 187, 0);
+  border-radius: 500px;
+  transition: 0.3s;
+}
+
+input#switch:checked + label.switch-label {
+  background: rgb(151, 151, 151) #ccc;
+}
+
+input#switch:checked + label.switch-label:after {
+  background: rgb(61, 61, 61);
+}
+
+input#switch:checked + label.switch-label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+/*        HOVER PROPS       */
+
+#item-no:hover {
+  cursor: pointer;
+  color: rgb(183, 0, 255);
+}
+
+#all:hover {
+  cursor: pointer;
+  color: rgb(183, 0, 255);
+}
+
+#pending:hover {
+  cursor: pointer;
+  color: rgb(183, 0, 255);
+}
+
+#complete:hover {
+  cursor: pointer;
+  color: rgb(183, 0, 255);
+}
+
+.clear:hover {
+  cursor: pointer;
+  color: rgb(183, 0, 255);
+}
+
+.item1:hover {
+  background-color: rgb(194, 194, 194);
+  transition: 0.1s ease-in-out;
+}
+
+.item2:hover {
+  background-color: rgb(194, 194, 194);
+  transition: 0.1s ease-in-out;
+}
+
+.item3:hover {
+  background-color: rgb(194, 194, 194);
+  transition: 0.1s ease-in-out;
+}
+
+i.fas.fa-plus:hover {
+  cursor: pointer;
+  color: rgb(183, 0, 255);
+}
+
+#radio1:hover {
+  cursor: pointer;
+}
+
+#radio2:hover {
+  cursor: pointer;
+}
+
+#radio3:hover {
+  cursor: pointer;
+}
